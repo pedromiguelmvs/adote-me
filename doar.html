@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Adote-me | Cadastro</title>
+		<title>Adote-me | Doar</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -38,13 +38,25 @@
 <section id="main" class="wrapper">
 				<div class="container">
 					<header class="major special">
-						<h2>Cadastro</h2>
-						<p>Preencha seus dados nesse formulário e seu cadastro estará finalizado!</p>
+						<h2>Ajude os animais</h2>
+						<p>Escolha a ONG para qual você deseja doar.</p>
+						<div class="12u$">
+										<div class="select-wrapper">
+											<select name="category" id="category">
+												<option value="">- ONG -</option>
+												<option value="1">Pata Carinhosa</option>
+												<option value="1">NEAFA</option>
+												<option value="1">Amor de Pet</option>
+												<option value="1">Adote uma Pata</option>
+											</select>
+										</div>
+									</div>
 					</header>
 
 					<!-- Form -->
 						<section>
-							<h3>Formulário</h3>
+							<h3>Informações Pessoias:</h3>
+							<p>Informe seus dados pessoais.</p>
 							<form method="post" action="#">
                                 <div class="row uniform 50%">
                                     <div class="6u 12u$(xsmall)">
@@ -56,43 +68,43 @@
                                     <div class="6u 12u$(xsmall)">
                                         <input type="text" name="telefone" id="telefone" value="" placeholder="Telefone" />
                                     </div>
-                                    <div class="6u$ 12u$(xsmall)">
-                                        <input type="text" name="endereço" id="endereço" value="" placeholder="Endereço" />
-                                    </div>                                    
+                               
+                                </div>
+                                <hr />
+                             <h3>Seus Dados Bancários:</h3>
+							<p>Informe seus dados.</p>
+							<form method="post" action="#">
+                                <div class="row uniform 50%">
                                     <div class="6u 12u$(xsmall)">
-                                            <input type="password" name="senha" id="senha" value="" placeholder="Senha" />
-                                    </div>
-                                    <div class="6u$ 12u$(xsmall)">
-                                            <input type="password" name="repetirsenha" id="repetirsenha" value="" placeholder="Repetir senha" />
-                                    </div>
+										<input type="text" name="name" id="name" value="" placeholder="Nome do titular" />
+									</div>
+                                    <div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="Nome do banco" />
+									</div>
+                                    <div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="Número da conta bancária" />
+									</div>
+                                    <div class="6u 12u$(xsmall)">
+										<input type="text" name="name" id="name" value="" placeholder="BIC" />
+									</div>
+								</div>
+								<br>
+                            
+
+
                                     <div class="6u 12u$(small)">
                                             <input type="checkbox" id="copy" name="copy">
-                                            <label for="copy">Me envie atualizações por email</label>
-                                        </div>
-                                        <div class="6u$ 12u$(small)">
-                                            <input type="checkbox" id="human" name="human" checked>
-                                            <label for="human">Eu sou humano e não sou um robô</label>
+                                            <label for="copy">Desejo que 10% do valor vá para a manutenção do site. </label>
                                         </div>
 									<div class="12u$">
 										<ul class="actions">
-											<li><input type="submit" value="Cadastrar" class="special" /></li>
+											<li><input type="submit" value="Doar" class="special" /></li>
 										</ul>
 									</div>
 								</div>
 							</form>
 						</section>
-						<section>
-							<h3>Já possui uma conta?</h3>
-									<div class="12u$">
-										<ul class="actions" >
-											<a href="login.html" class="button alt">Logar</a>
-										</ul>
-                                    </div>
-
-						</section>
-
-				</div>
-			</section>
+					
 
 
 		<!-- Footer -->
