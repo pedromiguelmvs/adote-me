@@ -1,0 +1,22 @@
+{
+  "name": "adote-me",
+  "version": "1.0.0",
+  "description": "Projeto de PRIU.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takiyoto/adote-me.git"
+  },
+  "author": "Miguel e Ciriaco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takiyoto/adote-me/issues"
+  },
+  "homepage": "https://github.com/takiyoto/adote-me#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
