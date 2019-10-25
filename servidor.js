@@ -1,3 +1,5 @@
+// Definindo as ferramentas que serão utilizadas no projeto
+
 const http = require("http");
 const express = require("express");
 const bodyParser = require('body-parser')
@@ -6,14 +8,11 @@ const uri = "mongodb+srv://Miguel:1602*p@cluster0-a0mqt.gcp.mongodb.net/test?ret
 const app = express();
 var path = require('path');
 
-app.use(express.static(__dirname + '/public'));
-// http.createServer(app).listen(3000, () => console.log("Servidor rodando local na porta 3000"));
+// Requisita a pasta public, contendo os arquivos css/imagens
 
-// app.get("/", function(req, res) {
-//     res.sendFile(__dirname + '/index.html');
-//     //res.sendFile(__dirname + '/assets/css/main.css');
-//     //res.sendFile(__dirname + '/images/9132pawprint.ico');
-// });
+app.use(express.static(__dirname + '/public'));
+
+// Conexão com a database & mais funcionalidades pro MongoDB
 
 MongoClient.connect(uri, (err, client) => {
     if (err) return console.log(err)
@@ -30,8 +29,9 @@ app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
     res.render('index.ejs')
-    // let cursor = db.collection('data').find()
 })
+
+// Rotas definidas
 
 app.get("/cadastro", function(req, res) {
     res.render('cadastro.ejs')
