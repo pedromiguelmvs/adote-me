@@ -41,7 +41,7 @@ app.get("/cadastro", function(req, res) {
 app.get('/show', (req, res) => {
     db.collection('data').find().toArray((err, results) => {
         if (err) return console.log(err)
-        res.render('index.ejs' /*'show.ejs', { data: results }*/)
+        res.render('show.ejs', { data: results })
 
     })
 })
